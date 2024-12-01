@@ -1,38 +1,60 @@
-.App {
+/* Ensure the app takes the full height of the viewport */
+body, html {
+  margin: 0;
+  width: 100vw;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Main container to stretch content */
+.container {
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Wrapper for flexbox layout */
+.app-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+}
+
+li{
+  list-style: none;
+}
+
+.weatherCard{
+  padding: 5px;
+  border: #000 3px solid;
+  margin: 10px;
+  width: 40vw;
+  justify-self: center;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #282c34;
   color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  width: 100vw;
+  position: relative;
 }
 
-.App-link {
+.footer-content {
+  max-width: 100%;
+  font-size: 14px;
+}
+
+.footer a {
   color: #61dafb;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a:hover {
+  text-decoration: underline;
 }
