@@ -15,6 +15,10 @@ body, html {
   flex: 1;
 }
 
+img{
+  background-color: aqua;
+}
+
 /* Wrapper for flexbox layout */
 .app-wrapper {
   display: flex;
@@ -29,8 +33,9 @@ li{
 .weatherCard{
   padding: 5px;
   border: #000 3px solid;
+  border-radius: 5%;
   margin: 10px;
-  width: 40vw;
+  width: 30vw;
   justify-self: center;
 }
 
